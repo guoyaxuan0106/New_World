@@ -10,7 +10,7 @@ The development process is:
   * Data transformation: transform caption (text) to vector
 * Model architecture:
   * Encoder: Resnet 101
-  * Decoder with attention: we use other's code
+  * Decoder: with attention
 * Model training: record loss, top-5 accuracy, bleu score for training and testing dataset
 * Inference: still in progress
   * Single pictures (from testing set): calculate the accuracy compared with its original captions
