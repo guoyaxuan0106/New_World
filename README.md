@@ -1,6 +1,6 @@
 # Video Captioner
 This project develops an auto-captioner for videos.   
-In this project, the training and testing dataset is the corresponding "2014 Train/Val images" dataset from dataset introduction (https://cocodataset.org/#download). 0.1% of these datasets are used since the original datasets are too large for training.
+In this project, the training and testing dataset is the corresponding "2014 Train/Val images" dataset from dataset introduction (https://cocodataset.org/#download). 0.1% of these datasets are used since the original datasets are too large for training.  
 **The model is based on a combination of CNN encoding to transfer images to feature maps and LSTM decoding to trasform feature maps into word vector.**  
 
  
@@ -62,5 +62,5 @@ For training dataset, we have the following process:
 * Backward propagation on decoder 
 * Keep track of metrics
 
-and for testing dataset, we follow the same process except the propagation update on parameters.  
+For testing dataset, we follow the same process except the propagation update on parameters.  
 **After training 30 epoches, both the training and testing loss decrease, with testing top-5 accuracy reaches about 98.21% and bleu-4 score about 0.6278.**
